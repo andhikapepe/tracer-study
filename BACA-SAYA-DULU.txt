@@ -1,0 +1,26 @@
+## Aplikasi ini dibuat dengan :
+1. PHP Version 7.3.11
+2. CodeIgniter-3.1.11-0
+3. SMTP Gmail
+4. Admin template AdminBSB
+5. Landing Page template MDBootstrap
+6. free images support by freepik.com
+
+## Cara install
+1. copy folder ini di folder htdocs jika menggunakan xampp, atau di public_html server web anda
+2. setting database di "application/config/database", sesuaikan dengan pengaturan anda.
+3. buka settingan phpmyadmin di browser kemudian import database.
+4. buka browser, ketikkan alamat sesuai yang anda lakukan di langkah nomor 1. *misal : localhost/nama-folder (jika di localhost)
+5. Aplikasi siap digunakan
+
+## Perhatian
+1. wajib setting SMTP Gmail di folder "controllers/auth" function _email_reset dan _email_sukses sebelum menggunakan aplikasi online
+2. jika icon pada tampilan web tidak muncul itu disebabkan karena anda tidak sedang terkoneksi dengan internet.
+3. aplikasi ini jauh dari kata sempurna, anda diperbolehkan melakukan modifikasi tanpa menghapus credit dari author/programmer, hargai jerih payah programmer dalam pengembangan! 
+4. apabila ada pertanyaan,kritik maupun saran, mengenai aplikasi anda dapat mengirim email ke alamat andhika6@gmail.com, jangan lupa cantumkan subject yang sesuai agar tidak langsung saya hapus!
+
+## catatan tentang penggunaan aplikasi
+1. landing page hanya tersedia menu testimoni dari alumni
+2. alumni baru bisa melihat menu lain setelah melakukan pengisian data diri
+3. username administrator adalah : andhika6@gmail.com dengan password : password
+4. username user adalah : user1@mail.com dengan password : password

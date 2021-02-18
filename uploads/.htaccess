@@ -1,0 +1,4 @@
+<Files *>
+Sethandler default-handler
+ForceType application/octet-stream
+</Files>
