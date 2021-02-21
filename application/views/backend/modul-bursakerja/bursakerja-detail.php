@@ -4,7 +4,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="card">
                     <div class="header">
-                        <?php echo anchor('bursakerja/bursakerja', '<i class="material-icons">keyboard_backspace</i><span>Kembali</span>', 'class="btn btn-primary waves-effect"') ?>
+                        <?php echo anchor('bursakerja', '<i class="material-icons">keyboard_backspace</i><span>Kembali</span>', 'class="btn btn-primary waves-effect"') ?>
                     </div>
                     <div class="body">
                         <div class="row clearfix">

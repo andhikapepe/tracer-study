@@ -23,7 +23,7 @@ class Bursakerja extends CI_Controller
     public function index()
     {
         $this->data['title'] = 'Bursa Kerja';
-        $this->data['table'] = $this->Main_model->read_join_one('lowongan', 'users', 'id_user', 'id', 'DATE(akhir_waktu) <= DATE(NOW())', 'id_lowongan')->result();
+        $this->data['table'] = $this->Main_model->read_join_one('lowongan', 'users', 'id_user', 'id', 'DATE(akhir_waktu) >= DATE(NOW())', 'id_lowongan')->result();
         //$this->data['table'] = $this->Main_model->where_data('DATE(akhir_waktu) <= DATE(NOW())', 'lowongan')->result();
         $this->data['additional_head'] = '<!-- JQuery DataTable Css -->
         <link href="' . base_url('assets/admin-page') . '/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">

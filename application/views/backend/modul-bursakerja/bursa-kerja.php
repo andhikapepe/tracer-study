@@ -58,7 +58,8 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <?php foreach ($table as $val) { ?>
+                                    <?php 
+                                    foreach ($table as $val) { ?>
                                         <tr>
                                             <td class="col-xs-6 col-md-2" style="vertical-align: middle">
                                                 <div>
