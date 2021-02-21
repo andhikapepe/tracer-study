@@ -151,36 +151,35 @@
                              </div>
                              <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                  <div class="form-group">
-                                     <?php echo
-                                            $opsikerja_ayah = array(
-                                                'BELUM/TIDAK BEKERJA' => 'BELUM/TIDAK BEKERJA',
-                                                'MENGURUS RUMAH TANGGA' => 'MENGURUS RUMAH TANGGA',
-                                                'PELAJAR/MAHASISWA' => 'PELAJAR/MAHASISWA',
-                                                'PENSIUNAN' => 'PENSIUNAN',
-                                                'PEGAWAI NEGERI SIPIL' => 'PEGAWAI NEGERI SIPIL',
-                                                'TENTARA NASIONAL INDONESIA' => 'TENTARA NASIONAL INDONESIA',
-                                                'KEPOLISIAN RI' => 'KEPOLISIAN RI',
-                                                'PERDAGANGAN' => 'PERDAGANGAN',
-                                                'PETANI/PEKEBUN' => 'PETANI/PEKEBUN',
-                                                'PETERNAK' => 'PETERNAK',
-                                                'NELAYAN/PERIKANAN' => 'NELAYAN/PERIKANAN',
-                                                'INDUSTRI' => 'INDUSTRI',
-                                                'KONSTRUKSI' => 'KONSTRUKSI',
-                                                'TRANSPORTASI' => 'TRANSPORTASI',
-                                                'KARYAWAN SWASTA' => 'KARYAWAN SWASTA',
-                                                'KARYAWAN BUMN' => 'KARYAWAN BUMN',
-                                                'KARYAWAN BUMD' => 'KARYAWAN BUMD',
-                                                'KARYAWAN HONORER' => 'KARYAWAN HONORER',
-                                                'BURUH HARIAN LEPAS' => 'BURUH HARIAN LEPAS',
-                                                'BURUH TANI/PERKEBUNAN' => 'BURUH TANI/PERKEBUNAN',
-                                                'BURUH NELAYAN/PERIKANAN' => 'BURUH NELAYAN/PERIKANAN',
-                                                'BURUH PETERNAKAN' => 'BURUH PETERNAKAN',
-                                                'PEMBANTU RUMAH TANGGA' => 'PEMBANTU RUMAH TANGGA',
-                                                'TUKANG CUKUR' => 'TUKANG CUKUR',
-                                                'TUKANG LISTRIK' => 'TUKANG LISTRIK',
-                                                'LAINNYA' => 'LAINNYA',
-                                            );
-                                        form_dropdown($pekerjaan_ayah, $opsikerja_ayah, 'BELUM/TIDAK BEKERJA', 'class="form-control show-tick" data-live-search="true" required'); ?>
+                                 <?php $opsikerja_ayah = array(
+                                            'BELUM/TIDAK BEKERJA' => 'BELUM/TIDAK BEKERJA',
+                                            'MENGURUS RUMAH TANGGA' => 'MENGURUS RUMAH TANGGA',
+                                            'PELAJAR/MAHASISWA' => 'PELAJAR/MAHASISWA',
+                                            'PENSIUNAN' => 'PENSIUNAN',
+                                            'PEGAWAI NEGERI SIPIL' => 'PEGAWAI NEGERI SIPIL',
+                                            'TENTARA NASIONAL INDONESIA' => 'TENTARA NASIONAL INDONESIA',
+                                            'KEPOLISIAN RI' => 'KEPOLISIAN RI',
+                                            'PERDAGANGAN' => 'PERDAGANGAN',
+                                            'PETANI/PEKEBUN' => 'PETANI/PEKEBUN',
+                                            'PETERNAK' => 'PETERNAK',
+                                            'NELAYAN/PERIKANAN' => 'NELAYAN/PERIKANAN',
+                                            'INDUSTRI' => 'INDUSTRI',
+                                            'KONSTRUKSI' => 'KONSTRUKSI',
+                                            'TRANSPORTASI' => 'TRANSPORTASI',
+                                            'KARYAWAN SWASTA' => 'KARYAWAN SWASTA',
+                                            'KARYAWAN BUMN' => 'KARYAWAN BUMN',
+                                            'KARYAWAN BUMD' => 'KARYAWAN BUMD',
+                                            'KARYAWAN HONORER' => 'KARYAWAN HONORER',
+                                            'BURUH HARIAN LEPAS' => 'BURUH HARIAN LEPAS',
+                                            'BURUH TANI/PERKEBUNAN' => 'BURUH TANI/PERKEBUNAN',
+                                            'BURUH NELAYAN/PERIKANAN' => 'BURUH NELAYAN/PERIKANAN',
+                                            'BURUH PETERNAKAN' => 'BURUH PETERNAKAN',
+                                            'PEMBANTU RUMAH TANGGA' => 'PEMBANTU RUMAH TANGGA',
+                                            'TUKANG CUKUR' => 'TUKANG CUKUR',
+                                            'TUKANG LISTRIK' => 'TUKANG LISTRIK',
+                                            'LAINNYA' => 'LAINNYA',
+                                        );
+                                        echo form_dropdown($pekerjaan_ayah, $opsikerja_ayah, 'BELUM/TIDAK BEKERJA', 'class="form-control show-tick" data-live-search="true" required'); ?>
                                  </div>
                              </div>
                          </div>

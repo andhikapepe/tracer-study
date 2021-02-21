@@ -25,10 +25,9 @@ class Data_diri extends CI_Controller
         //cek apakah sudah mengisi data diri
         $where = ['id_user' => $this->session->userdata('id_user')];
         $row = $this->Main_model->where_data($where, 'data_diri')->row_array();
-        if ($row['id_user']) {
+        if (!empty($row['id_user'])) {
             redirect('data-diri/data', 'refresh');
         } else {
-
             $this->form_validation->set_rules('prodi', 'Program Studi', 'trim|required');
             $this->form_validation->set_rules('jenis_kelamin', 'Jenis Kelamin', 'trim|required');
             $this->form_validation->set_rules('tempat_lahir', 'Tempat Lahir', 'trim|required');

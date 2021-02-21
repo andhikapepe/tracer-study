@@ -228,6 +228,8 @@ class Bursakerja extends CI_Controller
                     'value' => $this->form_validation->set_value('akhir_waktu', $row['akhir_waktu']),
                 );
                 $this->data['is_tampil'] = array(
+                    'id'    => 'is_tampil',
+                    'name'  => 'is_tampil',
                     'selected' => $this->form_validation->set_value('is_tampil', $row['is_tampil']),
                 );
                 $this->data['deskripsi'] = array(
@@ -273,8 +275,9 @@ class Bursakerja extends CI_Controller
                     'job_slug'          => $job_slug,
                     'akhir_waktu'       => $akhir_waktu,
                 ];
+
                 if ($this->session->userdata('role_active') == 1) {
-                    $data['is_tampil']  = $is_tampil;
+                    $data['is_tampil'] = $is_tampil;
                 }
 
                 $where = array('id_lowongan' => $row['id_lowongan']);
