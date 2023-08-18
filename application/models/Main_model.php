@@ -5,6 +5,11 @@ if (!defined('BASEPATH')) {
 }
 class Main_model extends CI_Model
 {
+    public function __construct()
+    {
+        $this->db->query("SET sql_mode=(SELECT REPLACE(@@sql_mode, 'ONLY_FULL_GROUP_BY', ''));");
+    }
+    
     function where_data($where, $table)
     {
         return $this->db->get_where($table, $where);
